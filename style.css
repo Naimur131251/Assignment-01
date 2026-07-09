@@ -1,3 +1,35 @@
-body{
-    background-color: purple;
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header{
+    padding: 20px 60px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+nav .menus ul{
+    display: flex;
+    gap: 25px;
+}
+nav .menus ul li{
+    list-style: none;
+}
+nav .menus ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+nav button{
+    background-color: #1D4ED8;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
 }
