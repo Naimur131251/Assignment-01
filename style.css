@@ -232,3 +232,59 @@ button{
     color: #0e1d2c;
     border-color: #0e1d2c;
 }
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    margin:0 auto;
+    padding:50px 90px;
+    background-color: #0e1d2c;
+}
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.footer-logo img{
+    height:45px;
+}
+.social-links{
+    display:flex;
+    gap:18px;
+}
+.social-links a{
+    width:42px;
+    height:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    border:1px solid #d9d9d9;
+    border-radius:50%;
+    color:#b9b9b9;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#2563eb;
+    color:#fff;
+    border-color:#2563eb;
+}
+footer .footer-container hr{
+    border:1px solid #6b7280;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p{
+    font-size:15px;
+    color:#6b7280;
+}
+.footer-bottom .right{
+    display: flex;
+    gap: 25px;
+}
