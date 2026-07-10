@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* common styles */
 .common-btn{
     background-color: #1D4ED8;
@@ -18,6 +19,9 @@
     max-width:1100px;
     margin:auto;
 }
+
+
+
 
 
 /* Header */
@@ -41,6 +45,8 @@ nav .menus ul li a{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
 }
+
+
 
 
 
@@ -92,6 +98,8 @@ nav .menus ul li a{
 
 
 
+
+
 /* Speakers section */
 .speakers{
     padding:80px 0;
@@ -136,6 +144,8 @@ nav .menus ul li a{
     font-size:15px;
     line-height:1.5;
 }
+
+
 
 
 
@@ -202,7 +212,6 @@ hr{
     border-color:rgba(255,255,255,.1);
 }
 ul{
-    /* list-style:none; */
     margin-left: 20px;
     lighting-color: #2563eb;
 }
@@ -232,6 +241,132 @@ button{
     color: #0e1d2c;
     border-color: #0e1d2c;
 }
+
+
+
+
+
+
+/* Career section */
+.career-section{
+    padding:100px 0;
+}
+.career-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+.career-heading h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+.career-heading p{    
+    margin:auto;
+    color:#64748b;
+    line-height:1.7;
+}
+.career-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.career-card{
+    padding:35px 25px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    text-align:center;
+    transition:.35s;
+}
+.career-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+.company-logo{
+    margin-bottom: 10px;
+}
+.career-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+    color:#111827;
+}
+.career-card span{
+    display:block;
+    color:#2563eb;
+    font-weight:600;
+    margin-bottom:12px;
+}
+.career-card p{
+    color:#64748b;
+    margin-bottom:25px;
+}
+.career-card a{
+    display:inline-block;
+    padding:12px 28px;
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:8px;
+    transition:.3s;
+}
+.career-card a:hover{
+    background:#1d4ed8;
+}
+
+
+
+
+
+/* FAQ section */
+.faq{
+    padding:100px 0;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-title h2{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:12px;
+}
+.section-title p{
+    color:#6b7280;
+}
+.faq-container{
+    max-width:800px;
+    margin:auto;
+}
+.faq-container details{
+    margin-bottom:18px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:18px 25px;
+    background:#fff;
+    transition:.3s;
+}
+.faq-container details[open]{
+    border-color:#2563eb;
+}
+.faq-container summary{
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    list-style:none;
+}
+.faq-container summary::after{
+    content:"+";
+    float:right;
+    font-size:24px;
+}
+.faq-container details[open] summary::after{
+    content:"−";
+}
+.faq-container p{
+    margin-top:18px;
+    color:#6b7280;
+    line-height:1.8;
+}
+
 
 
 
