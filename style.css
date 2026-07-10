@@ -11,6 +11,7 @@
     border: none;
     padding: 12px 24px;
     border-radius: 10px;
+    cursor:pointer;
 }
 .common-container{
     width:90%;
@@ -94,7 +95,7 @@ nav .menus ul li a{
 /* Speakers section */
 .speakers{
     padding:80px 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .speakers h2{
     text-align:center;
@@ -134,4 +135,100 @@ nav .menus ul li a{
     color:#666;
     font-size:15px;
     line-height:1.5;
+}
+
+
+
+/* Pricing section */
+section.price{
+    width:100%;
+    padding:80px 0;
+    font-family: "Inter", sans-serif;
+}
+.price-container{
+    text-align:center;
+    margin-bottom:50px;
+}
+.price-container h2{
+    font-size:48px;
+    font-weight:700;
+    color:#111827;
+}
+.price-container p{
+    margin:10px 0 48px 0;
+    color:#777;
+}
+.price-cards{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    text-align: left;
+}
+.price-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+.price-card.active{
+    background:#091522;
+    color:white;
+}
+.plan{
+    font-size:12px;
+    letter-spacing:1px;
+    color:#7b7b7b;
+}
+.price-card.active .plan{
+    color:#7ea7ff;
+}
+.price-card h3{
+    font-size:50px;
+    margin-top:10px;
+}
+.price-card small{
+    color:#888;
+}
+.price-card.active small{
+    color:#b9b9b9;
+}
+hr{
+    margin:25px 0;
+    border-top:1px solid rgba(0,0,0,.1);
+}
+.price-card.active hr{
+    border-color:rgba(255,255,255,.1);
+}
+ul{
+    /* list-style:none; */
+    margin-left: 20px;
+    lighting-color: #2563eb;
+}
+ul li{
+    margin-bottom:16px;
+    color:#555;
+    font-size:15px;
+}
+ul li::marker{
+    color:#2563eb;
+}
+.price-card.active ul li{
+    color:#ddd;
+}
+button{
+    width:100%;
+    margin-top:25px;
+    height:48px;
+    border-radius:8px;
+    border:1px solid #2563eb;
+    background:white;
+    color:#2563eb;
+    font-weight:600;
+    cursor:pointer;
+}
+.price-card .last-card-button{
+    color: #0e1d2c;
+    border-color: #0e1d2c;
 }
