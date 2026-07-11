@@ -9,33 +9,30 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- favicon -->
     <link rel="icon" href="./assets/logo-mini.png">
 </head>
 <body>
-    <header class="common-container">
+    <header class="common-padding common-container">
         <nav>
             <div class="logo">
-                <img src="./assets/logo.png" alt="">
+                <img src="./assets/logo.png" alt="Logo">
             </div>
 
-            <div class="menus">
-                <ul>
-                    <li><a href="">Speakers</a></li>
-                    <li><a href="">Schedule</a></li>
-                    <li><a href="">Tracks</a></li>
-                    <li><a href="">Venue</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="register">
-                <button class="common-btn">Register Now</button>
-            </div>
+            <ul>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Tracks</a></li>
+                <li><a href="#">Venue</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            
+            <button class="common-btn">Register Now</button>
         </nav>
     </header>
 
@@ -43,21 +40,20 @@
         <div class="hero-content">
             <h1>Code. <span>Connect.</span> Create</h1>
 
-            <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
+            <p>Join 4,000+ engineers, founders, and builders at the premier developer <br> conference of 2026. Three days of cutting-edge talks, hands-on workshops,<br> and meaningful connections.</p>
 
             <button class="common-btn">Register Now</button>
         </div>
     </section>
-
     
     <section class="speakers common-container">
         <div class="speakers-container">
-            <h2>Meet the Speakers</h2>
+            <h2 class="common-h2">Meet the Speakers</h2>
 
             <div class="cards-grid">
                 <div class="card">
 
-                    <img src="./assets/andrej.png" alt="">
+                    <img src="./assets/andrej.png" alt="Man Pic">
 
                     <div class="card-content">
 
@@ -73,7 +69,7 @@
 
                 <div class="card">
 
-                    <img src="./assets/demis.png" alt="">
+                    <img src="./assets/demis.png" alt="Man Pic">
 
                     <div class="card-content">
 
@@ -89,7 +85,7 @@
 
                 <div class="card">
 
-                    <img src="./assets/gary.png" alt="">
+                    <img src="./assets/gary.png" alt="Man Pic">
 
                     <div class="card-content">
 
@@ -105,7 +101,7 @@
 
                 <div class="card">
 
-                    <img src="./assets/mustafa.png" alt="">
+                    <img src="./assets/mustafa.png" alt="Man Pic">
 
                     <div class="card-content">
 
@@ -124,9 +120,9 @@
 
     <section class="price">
         <div class="price-container">
-            <h2>Secure Your Spot</h2>
+            <h2 class="common-h2">Secure Your Spot</h2>
 
-            <p>Early-bird pricing ends August 15, 2026.</p>
+            <p class="common-p">Early-bird pricing ends August 15, 2026.</p>
 
             <div class="price-cards">
                 <div class="price-card">
@@ -170,7 +166,7 @@
                         <li>1-on-1 mentorship (30 min)</li>
                     </ul>
 
-                    <button class="common-btn">Get Pro</button>
+                    <button class="pro-btn">Get Pro</button>
 
                 </div>
 
@@ -200,8 +196,8 @@
 
     <section class="career-section common-container">
         <div class="career-heading">
-            <h2>Career Hub & Job Board</h2>
-            <p>
+            <h2 class="common-h2">Career Hub & Job Board</h2>
+            <p class="common-p">
                 Meet top tech companies hiring at DevConf 2026.
             </p>
         </div>
@@ -272,8 +268,8 @@
     
     <section class="faq common-container">
         <div class="section-title">
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know before joining DevConf 2026.</p>
+            <h2 class="common-h2">Frequently Asked Questions</h2>
+            <p class="common-p">Everything you need to know before joining DevConf 2026.</p>
         </div>
 
         <div class="faq-container">
@@ -321,9 +317,9 @@
 
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="x"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
 
             </div>
@@ -332,7 +328,7 @@
 
             <div class="footer-bottom">
                 <div class="left">
-                    <p>© 2026 DEVCONF. All rights reserved.</p>
+                    <p>© 2026 DevConf. All rights reserved.</p>
                 </div>
                 <div class="right">
                     <p>Privacy Policy</p>

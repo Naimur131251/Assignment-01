@@ -3,21 +3,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
+
+/* 
+common colors.....
+nab menu- #575757
+header- #0d1b2a
+catagory- #2563eb
+*/
 
 /* common styles */
 .common-btn{
-    background-color: #1D4ED8;
+    background-color: #2563eb;
     color: white;
-    border: none;
-    padding: 12px 24px;
+    border: none;  
     border-radius: 10px;
     cursor:pointer;
+    max-width: 14%;
+}
+.common-btn:hover{
+    background-color: #1c5de9;
 }
 .common-container{
-    width:90%;
-    max-width:1100px;
+    width:87%;
+    max-width:1200px;
     margin:auto;
+    padding: 80px 0;
+}
+.common-padding{
+    padding: 10px 0;
+}
+.common-h2{
+    text-align:center;
+    font-size:3rem;
+    font-weight:700;
+    color:#0d1b2a;
+}
+.common-p{
+    color:#575757;
+    margin:10px 0 50px 0;
 }
 
 
@@ -25,25 +50,31 @@
 
 
 /* Header */
-header{
-    padding: 10px 0;
-}
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-nav .menus ul{
-    display: flex;
-    gap: 25px;
+nav .logo{
+    cursor: pointer;
 }
-nav .menus ul li{
-    list-style: none;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    position:relative;
+    top: 10px;
 }
-nav .menus ul li a{
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+nav ul li a{
+    text-decoration:none;
+    color:#575757;
+    font-size:1rem;
+    transition:.3s;
+    font-family: "Arimo", sans-serif;
+}
+nav button{
+    position: relative;
+    top: -5px;
 }
 
 
@@ -59,41 +90,49 @@ nav .menus ul li a{
     width: 100%;
     height: 100vh;
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .hero::before{
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
-    to left,
-    rgba(0,0,0,.35) 0%,
-    rgba(0,0,0,.95) 100%
-)
+    to right,
+    rgba(0,0,0,.95) 0%,
+    rgba(0,0,0,.65) 25%,
+    rgba(0,0,0,.15) 75%,
+    rgba(0,0,0,.05) 100%
+    ),linear-gradient(
+    45deg,
+    rgba(0,0,0,.95) 0%,
+    rgba(0,0,0,.65) 25%,
+    rgba(0,0,0,.25) 75%,
+    rgba(0,0,0,.05) 100%
+    )
 }
 .hero-content{
     z-index: 1;
     position: relative;
     color: white;
     text-align: center;
-    max-width: 70%;
+    max-width: 90%;
     margin: auto;
 }
 .hero-content h1{
-    padding: 7% 0 3% 0;
+    padding: 10% 0 2% 0;
     font-size: 4rem;
 }
 .hero-content span{
     font-style: italic;
 }
 .hero-content p{
-    width: 62%;
-    text-align: center;
     margin: auto;
+    color: #ffffffc7;
+    font-size: 1.2rem;
+    width: 60%;
 }
 .hero-content button{
     margin-top: 20%;
-    border-radius: 7px;
 }
 
 
@@ -101,15 +140,8 @@ nav .menus ul li a{
 
 
 /* Speakers section */
-.speakers{
-    padding:80px 0;
-    font-family: "Inter", sans-serif;
-}
 .speakers h2{
-    text-align:center;
-    font-size:3rem;
     margin-bottom:50px;
-    font-weight:700;
 }
 .cards-grid{
     display:grid;
@@ -120,29 +152,33 @@ nav .menus ul li a{
     background:#fff;
     border:1px solid #e6e6e6;
     border-radius:10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.card:hover{
+    transform:translateY(-8px);
     box-shadow:0 15px 15px rgba(0,0,0,.08);
 }
 .card img{
     width:100%;
     object-fit:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .card-content{
     padding:22px;
 }
 .card-content h6{
     font-weight:bold;
-    color:#2F6BFF;
-    letter-spacing:1px;
+    color:#2563eb;
 }
-
 .card-content h3{
     margin:10px 0;
-    font-size:24px;
+    font-size:1.2rem;
 }
 .card-content p{
-    color:#666;
-    font-size:15px;
-    line-height:1.5;
+    color:#575757;
+    font-size: .8rem;
 }
 
 
@@ -153,23 +189,14 @@ nav .menus ul li a{
 section.price{
     width:100%;
     padding:80px 0;
-    font-family: "Inter", sans-serif;
+    
 }
 .price-container{
     text-align:center;
     margin-bottom:50px;
 }
-.price-container h2{
-    font-size:48px;
-    font-weight:700;
-    color:#111827;
-}
-.price-container p{
-    margin:10px 0 48px 0;
-    color:#777;
-}
 .price-cards{
-    max-width:1100px;
+    max-width:77%;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -177,32 +204,37 @@ section.price{
     text-align: left;
 }
 .price-card{
-    background:white;
+    background: #f8f9fb;
     padding:30px;
     border-radius:10px;
-    border:1px solid #ddd;
+    border:1px solid #e5e7eb;
+    transition: .3s;
+}
+.price-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 15px rgba(0,0,0,.08);
 }
 .price-card.active{
-    background:#091522;
+    background:#0d1b2a;
     color:white;
 }
 .plan{
-    font-size:12px;
-    letter-spacing:1px;
+    font-size:.7rem;
+    letter-spacing:1px; 
     color:#7b7b7b;
 }
 .price-card.active .plan{
     color:#7ea7ff;
 }
 .price-card h3{
-    font-size:50px;
+    font-size:2.5rem;
     margin-top:10px;
 }
 .price-card small{
     color:#888;
 }
 .price-card.active small{
-    color:#b9b9b9;
+    color:#838383;
 }
 hr{
     margin:25px 0;
@@ -217,18 +249,21 @@ ul{
 }
 ul li{
     margin-bottom:16px;
-    color:#555;
-    font-size:15px;
+    color:#333;
+    font-size:.9rem;
+    line-height: 1;
 }
 ul li::marker{
-    color:#2563eb;
+    color: #2563eb;
 }
 .price-card.active ul li{
     color:#ddd;
+    font-size:.8rem;
+    font-weight: 250;
 }
 button{
     width:100%;
-    margin-top:25px;
+    margin-top:10px;
     height:48px;
     border-radius:8px;
     border:1px solid #2563eb;
@@ -236,6 +271,11 @@ button{
     color:#2563eb;
     font-weight:600;
     cursor:pointer;
+}
+.price-card .pro-btn{
+    border: none;
+    background-color: #2563eb;
+    color: white;
 }
 .price-card .last-card-button{
     color: #0e1d2c;
@@ -255,16 +295,6 @@ button{
     text-align:center;
     margin-bottom:60px;
 }
-.career-heading h2{
-    font-size:42px;
-    color:#0f172a;
-    margin-bottom:15px;
-}
-.career-heading p{    
-    margin:auto;
-    color:#64748b;
-    line-height:1.7;
-}
 .career-container{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -275,7 +305,7 @@ button{
     border:1px solid #e5e7eb;
     border-radius:10px;
     text-align:center;
-    transition:.35s;
+    transition:.3s;
 }
 .career-card:hover{
     transform:translateY(-8px);
@@ -324,14 +354,6 @@ button{
     text-align:center;
     margin-bottom:50px;
 }
-.section-title h2{
-    font-size:42px;
-    color:#111827;
-    margin-bottom:12px;
-}
-.section-title p{
-    color:#6b7280;
-}
 .faq-container{
     max-width:800px;
     margin:auto;
@@ -341,7 +363,6 @@ button{
     border:1px solid #e5e7eb;
     border-radius:10px;
     padding:18px 25px;
-    background:#fff;
     transition:.3s;
 }
 .faq-container details[open]{
@@ -363,7 +384,7 @@ button{
 }
 .faq-container p{
     margin-top:18px;
-    color:#6b7280;
+    color:#575757;
     line-height:1.8;
 }
 
@@ -372,10 +393,7 @@ button{
 
 /* Footer */
 footer{
-    width: 100%;
-    margin:0 auto;
-    padding:50px 90px;
-    background-color: #0e1d2c;
+    background-color: #0d1b2a;
 }
 .footer-top{
     display:flex;
@@ -384,6 +402,7 @@ footer{
 }
 .footer-logo img{
     height:45px;
+    cursor: pointer;
 }
 .social-links{
     display:flex;
@@ -407,6 +426,16 @@ footer{
     color:#fff;
     border-color:#2563eb;
 }
+.social-links .x:hover{
+    background:black;
+    border-color:black;
+}
+.social-links .instagram:hover{
+    background: linear-gradient(
+    135deg,
+    #833ab4,#fd1d1d,#fcb045
+    );
+}
 footer .footer-container hr{
     border:1px solid #6b7280;
 }
@@ -418,6 +447,7 @@ footer .footer-container hr{
 .footer-bottom p{
     font-size:15px;
     color:#6b7280;
+    cursor: pointer;
 }
 .footer-bottom .right{
     display: flex;
