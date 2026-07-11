@@ -88,7 +88,6 @@ nav button{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
     position: relative;
     font-family: "Inter", sans-serif;
 }
@@ -97,15 +96,9 @@ nav button{
     position: absolute;
     inset: 0;
     background: linear-gradient(
-    to right,
-    rgba(0,0,0,.95) 0%,
-    rgba(0,0,0,.65) 25%,
-    rgba(0,0,0,.15) 75%,
-    rgba(0,0,0,.05) 100%
-    ),linear-gradient(
     45deg,
     rgba(0,0,0,.95) 0%,
-    rgba(0,0,0,.65) 25%,
+    rgba(0,0,0,.85) 25%,
     rgba(0,0,0,.25) 75%,
     rgba(0,0,0,.05) 100%
     )
@@ -132,7 +125,16 @@ nav button{
     width: 60%;
 }
 .hero-content button{
-    margin-top: 20%;
+    margin-top: 21%;
+    background-color: #2563eb;
+    color: white;
+    border: none;  
+    border-radius: 10px;
+    cursor:pointer;
+    max-width: 20%;
+    min-height: 70px; 
+    font-size: 1.2rem;
+    margin-bottom: 5%;
 }
 
 
